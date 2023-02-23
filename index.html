@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tech</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <p>MANIPAL UNIVERSITY JAIPUR</p>
+            <h1>TECHIDEATE'23</h1>
+        
+<div id="timer" style="padding-top: 100px;"></div>
+<!-- <div class="card">
+    <h2>CARD</h2>
+</div> -->
+</div>
+<section class="card-holder">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p class="title">HACKITUP</p>
+            </div>
+            <div class="flip-card-back">
+                <p class="title">DAY 1</p>
+                <!-- <p>Leave Me</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p class="title">ROBOWARS</p>
+                <!-- <p>More information</p> -->
+            </div>
+            <div class="flip-card-back">
+                <p class="title">DAY 1</p>
+                <!-- <p>Leave Me</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p class="title">TOWNHALL</p>
+                <!-- <p>Hover Me</p> -->
+            </div>
+            <div class="flip-card-back">
+                <p class="title">DAY 1</p>
+                <!-- <p>Leave Me</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p class="title">DRONE SHOW</p>
+                <!-- <p>Hover Me</p> -->
+            </div>
+            <div class="flip-card-back">
+                <p class="title">DAY 2</p>
+                <!-- <p>Leave Me</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p class="title">TECH EXPO</p>
+                <!-- <p>Hover Me</p> -->
+            </div>
+            <div class="flip-card-back">
+                <p class="title">DAY 2</p>
+                <!-- <p>Leave Me</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p class="title">ESPORTS</p>
+                <!-- <p>Hover Me</p> -->
+            </div>
+            <div class="flip-card-back">
+                <p class="title">DAY 2</p>
+                <!-- <p>Leave Me</p> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function updateTimer() {
+      future = Date.parse("mar 18, 2023 11:30:00");
+      now = new Date();
+      diff = future - now;
+     
+      days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      hours = Math.floor(diff / (1000 * 60 * 60));
+      mins = Math.floor(diff / (1000 * 60));
+      secs = Math.floor(diff / 1000);
+     
+      d = days;
+      h = hours - days * 24;
+      m = mins - hours * 60;
+      s = secs - mins * 60;
+     
+      document.getElementById("timer").innerHTML =
+        "<div>" +
+        d +
+        "<span>days</span></div>" +
+        "<div>" +
+        h +
+        "<span>hours</span></div>" +
+        "<div>" +
+        m +
+        "<span>minutes</span></div>" +
+        "<div>" +
+        s +
+        "<span>seconds</span></div>";
+    }
+    setInterval("updateTimer()", 1000);
+    </script>
+</body>
+</html>
